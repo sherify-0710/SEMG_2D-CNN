@@ -37,14 +37,22 @@ cnn_model.py           CNN骨干网络、通道注意力、训练与评估逻辑
 image_transform.py     希尔伯特映射、幅值分层量化核心函数
 utils.py               预处理工具：滑动窗口、滤波、通道标准化
 exp_data_cache.pkl     自动生成的预处理缓存文件
+requirements.txt       需要配置的环境
 
 # 运行环境
 python >= 3.8
+
 torch
+
 numpy
+
 scipy
+
 matplotlib
+
 scikit-learn
+
+（详见requirements.txt ）
 
 安装命令：
 pip install torch numpy scipy matplotlib scikit-learn
@@ -58,7 +66,6 @@ pip install torch numpy scipy matplotlib scikit-learn
 - 信号时空转换：一维肌电时序信号转为二维希尔伯特特征图像
 - 幅值分层量化：连续信号离散编码，强化手势特征差异
 - 可配置 CNN：支持注意力开关、Dropout、超参数自定义
-- 完整评估指标：准确率、宏F1、精确率、召回率、单类别F1分数
 
 # 开源声明
 本项目仅用于学习与科研开源使用。
